@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:ru:ilb:test"
+    xmlns="urn:ru:ilb:test"
+    elementFormDefault="qualified">
+
+    <xsd:element name="test">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="link" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

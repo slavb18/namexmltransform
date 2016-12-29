@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings elementFormDefault="qualified"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               jaxb:version="2.1"
+               jaxb:extensionBindingPrefixes="xjc"
+               schemaLocation="./test.xsd" node="/xsd:schema"
+>
+    <jaxb:globalBindings>
+        <xjc:simple/>
+        <xjc:serializable/>
+    </jaxb:globalBindings>
+    <!-- with enabled jaxb:nameXmlTransform generated classes receive suffix DTO and ru.ilb.test.api.TestResource no more sees them -->
+    <jaxb:schemaBindings>
+        <jaxb:nameXmlTransform>
+            <jaxb:elementName suffix="DTO" />
+            <jaxb:typeName suffix="DTO" />
+            <jaxb:anonymousTypeName suffix="DTO"/>
+        </jaxb:nameXmlTransform>    
+    </jaxb:schemaBindings>    
+</jaxb:bindings>
+
