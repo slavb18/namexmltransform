@@ -12,12 +12,14 @@
         <xjc:serializable/>
     </jaxb:globalBindings>
     <!-- with enabled jaxb:nameXmlTransform generated classes receive suffix DTO and ru.ilb.test.api.TestResource no more sees them -->
-    <jaxb:schemaBindings>
-        <jaxb:nameXmlTransform>
-            <jaxb:elementName suffix="DTO" />
-            <jaxb:typeName suffix="DTO" />
-            <jaxb:anonymousTypeName suffix="DTO"/>
-        </jaxb:nameXmlTransform>    
-    </jaxb:schemaBindings>    
+    <jaxb:bindings>
+        <jaxb:schemaBindings>
+            <jaxb:nameXmlTransform>
+                <jaxb:elementName suffix="DTO" />
+                <jaxb:typeName suffix="DTO" />
+                <jaxb:anonymousTypeName suffix="DTO"/>
+            </jaxb:nameXmlTransform>    
+        </jaxb:schemaBindings>    
+    </jaxb:bindings>
 </jaxb:bindings>
 
